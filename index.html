@@ -60,6 +60,14 @@
 
 				<section>
 					<p>
+						Sun et al. (1998) [Sun98]<br />
+						Achieving convergence, causality preservation, and intention preservation in real-time cooperative editing systems<br />
+						<a href="http://dl.acm.org/citation.cfm?doid=274444.274447">http://dl.acm.org/citation.cfm?doid=274444.274447</a>
+					</p>
+				</section>
+
+				<section>
+					<p>
 						Monschke, Jan (2014) [Mon14]<br />
 						Building a collaborative music production environment using emerging web standards<br />
 						<a href="https://github.com/janmonschke/Master-s-Thesis---Web-Audio-DAW">https://github.com/janmonschke/Master-s-Thesis---Web-Audio-DAW</a>
@@ -83,6 +91,49 @@
 
 				<section>
 					<h2>How to sync state?</h2>
+				</section>
+
+				<section>
+					<h2>Requirements</h2>
+					<span>[Sun98]</span>
+				</section>
+
+				<section>
+					<h2>Convergence</h2>
+					<p>
+						Due to latency on web, documents might be in different states at the same time.
+					</p>
+					<p class="fragment">
+						The algorithm should allow these states and not block the editing features.
+					</p>
+				</section>
+
+				<section>
+					<h2>Intention preservation</h2>
+					<p>
+						The intent of a change should be preserved.
+					</p>
+					<p class="fragment">
+						When local changes are applied onto remote documents, the local intent should be preserved.
+					</p>
+				</section>
+
+				<section>
+					<img src="images/ot-problem.png">
+				</section>
+
+				<section>
+					<h2>Causality preservation</h2>
+					<p>
+						A change is always applied in its causal context.
+					</p>
+					<p class="fragment">
+						The order of changes on local documents is preserved and applied to remote documents.
+					</p>
+				</section>
+
+				<section>
+					<img src="images/ot-problem.png">
 				</section>
 
 				<section>
@@ -124,10 +175,6 @@
 						<li class="fragment">The documentation and versioning is highly confusing (*)</li>
 						<small class="fragment" style="margin-top: 20px">(*) don't get me wrong, Joseph Gentle, your library still rocks, it just didn't work for me ❤️</small>
 					</ul>
-				</section>
-
-				<section>
-					<img src="images/ot-problem.png">
 				</section>
 
 				<section>
